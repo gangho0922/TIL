@@ -127,3 +127,5 @@ Raw Value를 통해서도 열거형을 생성할 수 있는데, 이땐 다음과
 var user = PositionWithRawValue.init(rawValue: "top")
 ```
 만약에 Raw Value 값이 없는 것을 대입할 때 반환되는 열거형은 옵셔널 타입임을 알아두도록 한다.
+<br><br><br><br>
+이상 enum에 대해 마치도록 하겠습니다.
