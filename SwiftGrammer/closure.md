@@ -40,7 +40,7 @@ let reverseNames = names.sorted(by: {$0 > $1})
 연산자를 사용할 수 있는 타입의 경우 연산자만 남길 수 있다.
 ```swift
 let reversedNames = names.sorted(by: > )
-
+```
 ### 후행 클로저
 인자로 클로저를 넣기가 길다면 후행 클로저를 사용하여 함수의 뒤에 표현할 수 있다.
 ```swift
