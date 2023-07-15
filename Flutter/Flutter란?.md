@@ -34,7 +34,9 @@ Google 에서 개발하고 Mobile World Congress 2018에서 최초 베타 릴리
 
 ## Flutter는 어떤 언어를 사용할까?
 보통 Flutter는 Dart 언어를 사용한다.
+
 ![](Dart.png)
+
 물론 Dart 만 하는 것이 아니라 OS별 Native 코드도 사용하며 Android는 kotlin, iOS는 Swift를 사용한다.
 
 ## Flutter의 특징
@@ -53,4 +55,4 @@ Google 에서 개발하고 Mobile World Congress 2018에서 최초 베타 릴리
 * 지원되는 플러기인 부족
 * 국내에 개발 관련 자료가 많이 없음
 ___
-이상으로 Flutter란 무엇인가에 대한 공부를 마치도록 하겠다.
+이상으로 Flutter란 무엇인가에 대한 공부를 마치도록 하겠다.  
