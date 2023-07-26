@@ -20,7 +20,7 @@ Realm은 SPM, CocoaPods, Carthage 중 아무거나 사용해도 설치가 가능
 예)
 ```swift
 class PersonBook: Object {
-    @Persisted(PrimaryKey: true) var number: String? // primary key로 지정
+    @Persisted(PrimaryKey: true) var residentNumber: String? // primary key로 지정
     @Persisted var name: String = ""
     @Persisted var status: String = ""
 
@@ -36,3 +36,42 @@ Realm 데이터베이스에 접근하려면,
 let realm = try! Realm()
 ```
 이렇게 객체를 열어서 사용하면 된다.
+
+### Create 부분
+```swift
+let personBook = PersonBook(residentNumber: "123456-0987654")
+
+try! realm.write { 
+    realm.add(personBook)
+}
+```
+### Retrieve 부분
+```swift
+let books = realm.objects(PersonBook.self)
+
+let predicateQuery = NSPredicate(format: "name = %@", "Ahn")
+let result = savedShifts.books(predicateQuery)
+```
+
+### Update 부분
+```
+let toUpdate = books[0]
+
+try! realm.write {
+    books.name = "Kim"
+}
+```
+
+### Delete 부분
+```swift
+let toDelete = book[0]
+
+try! realm.write {
+    realm.delete(toDelete)
+}
+```
+
+이런 뉘양스로 CRUD를 작성하면 된다.
+
+___
+이상으로 Realm에 대한 공부를 마치도록 하겠다.
