@@ -47,7 +47,7 @@ struct MySheetAndFullScreenCover: View {
 이런식으로 .sheet형태로 보여지게 될 것이고,
 #### Show Full Screen Cover 버튼을 누르게 된다면
 
-![](FullScreenOver.png)
+![](FullScreenCover.png)
 이런식으로 .FullScreenCover 형태로 보여지게 될 것이다.
 
 ___
